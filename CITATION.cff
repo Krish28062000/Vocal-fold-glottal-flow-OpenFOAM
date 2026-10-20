@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the project report."
+title: "Development of a Simplified CFD Model of the Human Vocal Folds"
+authors:
+  - family-names: Anand
+    given-names: Suraj
+  - family-names: Hebbar
+    given-names: Abhishek
+  - family-names: Ramamurthi
+    given-names: Krishna Kumar
+date-released: 2024-09-10
+license: GPL-3.0
+preferred-citation:
+  type: report
+  title: "Development of a Simplified CFD Model of the Human Vocal Folds"
+  authors:
+    - family-names: Anand
+      given-names: Suraj
+    - family-names: Hebbar
+      given-names: Abhishek
+    - family-names: Ramamurthi
+      given-names: Krishna Kumar
+  institution:
+    name: "TU Bergakademie Freiberg, Institut für Mechanik und Fluiddynamik"
+  year: 2024

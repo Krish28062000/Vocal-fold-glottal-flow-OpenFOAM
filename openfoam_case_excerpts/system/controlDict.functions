@@ -1,0 +1,26 @@
+// Excerpt of system/controlDict: monitoring functions used in the mesh study.
+// Inlet mass-flow rate and velocity at four probes (see docs/images/probe_locations.png).
+
+functions
+{
+    #includeFunc patchFlowRate(name=inletFlowRate, patch=inlet)
+
+    probes1
+    {
+        type                probes;
+        functionObjectLibs  ("libsampling.so");
+        region              region0;
+
+        probeLocations
+        (
+            (22.55463e-03   3e-03  0)   // probe 0  upstream of glottis, upper half
+            (22.55463e-03  -3e-03  0)   // probe 1  upstream of glottis, lower half
+            (56.121155e-03  3e-03  0)   // probe 2  downstream of glottis, upper half
+            (56.121155e-03 -3e-03  0)   // probe 3  downstream of glottis, lower half
+        );
+
+        fields          (U);
+        outputControl   timeStep;
+        outputInterval  10;
+    }
+}
